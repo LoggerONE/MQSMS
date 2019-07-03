@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="{{ app()->getLocale() }}">
+        <% include ../commons/head %>
+    <body>
+        <div class="flex-center position-ref full-height">
+
+            <div class="content">
+                
+                <div class="text-center" style="padding:50px 0">
+                    <div class="title m-b-md">Sign Up</div>
+                    <!-- Main Form -->
+                    <div class="login-form-1">
+
+                            <div class="login-form-main-message"></div>
+
+                            <form id='form-signup' action="#">
+
+                                <div class="main-login-form">
+                                    <div class="login-group">
+                                        
+                                        <div class="form-group">
+                                                <label for="signup_username" class="sr-only">Email address</label>
+                                                <input type="text" class="form-control" id="signup_username" name="signup_username" placeholder="username" required>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="signup_email" class="sr-only">Email</label>
+                                            <input type="email" class="form-control" id="signup_email" name="signup_email" placeholder="email" required>
+                                        </div>                                    
+
+                                        <div class="form-group">
+                                            <label for="signup_password" class="sr-only">Password</label>
+                                            <input type="password" class="form-control" id="signup_password" name="signup_password" placeholder="password" required>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="signup_password_confirm" class="sr-only">Password Confirm</label>
+                                            <input type="password" class="form-control" id="signup_password_confirm" name="signup_password_confirm" placeholder="confirm password" required>
+                                        </div>
+                                        
+                                        <div class="form-group login-group-checkbox">
+                                            <input type="checkbox" class="" id="signup-agree" name="signup-agree">
+                                            <label for="signup-agree">i agree with <a target='_blank' href="/pages/terms">terms</a></label>
+                                        </div>
+                                    </div>
+                                    <button id='btn-signup' type="submit" class="login-button btn btn-primary">Submit</button>
+                                </div>
+
+                            </form>
+
+                            <br/>
+                            <div class="etc-login-form">
+                                <p>already have an account? <a href="/auth">login here</a></p>
+                            </div>
+
+                    </div>
+                    <!-- end:Main Form -->
+                </div>
+                
+            </div>
+        </div>
+    </body>
+    <% include ../commons/foot %>
+</html>

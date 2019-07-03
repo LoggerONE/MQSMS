@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="{{ app()->getLocale() }}">
+    <% include ../commons/head %>
+
+    <body>
+        <div class="flex-center position-ref full-height">
+
+            <div class="content">
+                <div class="text-center" style="padding:50px 0">
+                    <div class="title m-b-md">Login</div>
+                    <!-- Main Form -->
+                    <div class="login-form-1">
+                        <form id="login-form" class="text-left"></form>
+                            <div class="login-form-main-message"></div>
+                            <div class="main-login-form">
+                                <div class="login-group">
+                                    <div class="form-group">
+                                        <label for="signin-email" class="sr-only">Email</label>
+                                        <input type="text" class="form-control" id="signin-email" name="signin-email" placeholder="E-Mail">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="signin-password" class="sr-only">Password</label>
+                                        <input type="password" class="form-control" id="signin-password" name="signin-password" placeholder="password">
+                                    </div>
+                
+                                </div>
+                                <button id='btn-signin' type="submit" class="btn btn-primary login-button">Submit</button>
+                            </div>
+
+                    </div>
+                    <!-- end:Main Form -->
+                </div>
+                
+            </div>
+        </div>
+    </body>
+    <% include ../commons/foot %>
+</html>
